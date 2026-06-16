@@ -43,7 +43,7 @@ export function Hero() {
             </a>
             <a href="https://docs.google.com/document/d/1liuin06dADzezDJbtDJWd6TvbDNMc5YmKcAX3annmaE/export?format=pdf" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="gap-2 font-bold group text-base h-14 px-6">
-                Download CV
+                Download Resume
                 <Download className="group-hover:translate-y-0.5 transition-transform" />
               </Button>
             </a>
