@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-bg-main: var(--bg-main);
+  --color-bg-surface: var(--bg-surface);
+  --color-primary: var(--primary);
+  --color-text-main: var(--text-main);
+
+  --font-sans: var(--font-sans);
+  --font-body: var(--font-body);
+}
+
+@layer base {
+  :root {
+    --bg-main: #FDFBFB;
+    --bg-surface: #FFFFFF;
+    --primary: #6B1D2F;
+    --text-main: #1E293B;
+  }
+
+  .dark {
+    --bg-main: #0F172A;
+    --bg-surface: #1E293B;
+    --primary: #E11D48;
+    --text-main: #F8FAFC;
+  }
+
+  * {
+    border-color: color-mix(in srgb, var(--primary) 20%, transparent);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+  }
+}
