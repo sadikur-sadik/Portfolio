@@ -1,11 +1,30 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { useState, useEffect } from "react"
+import { AnimatePresence, motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, Download } from "lucide-react"
 import Image from "next/image"
 import banner_image from "@/app/asset/banner.png"
+
+const titles = [
+  "Full Stack Learner",
+  "Next.js Enthusiast",
+  "Software Developer",
+  "Frontend Specialist",
+  "Problem Solver"
+]
+
 export function Hero() {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % titles.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section id="home" className="relative min-h-screen pt-32 pb-24 flex items-center overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10 w-full">
@@ -20,18 +39,31 @@ export function Hero() {
             <span className="font-bold text-sm">Hi everyone 👋, I am Sadikur Rahman</span>
           </div>
 
-          <h1 className="font-sans text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
-            MERN Stack<br />
-            <span className="relative text-primary">
-              Developer
-              <svg className="absolute -bottom-2 left-0 w-full" fill="none" height="10" viewBox="0 0 400 10">
-                <path d="M2 8C50 3 150 3 400 8" stroke="currentColor" strokeLinecap="round" strokeWidth="4"></path>
-              </svg>
-            </span>
-          </h1>
+          <div className="w-full flex flex-col items-center md:items-start select-none">
+            <h1 className="font-sans text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
+              I am a
+            </h1>
+            <div className="relative text-3xl sm:text-5xl md:text-6xl font-extrabold text-primary min-h-[48px] sm:min-h-[68px] md:min-h-[88px] flex items-center justify-center md:justify-start w-full mt-2 overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={currentWordIndex}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -15 }}
+                  transition={{ duration: 0.35, ease: "easeInOut" }}
+                  className="relative whitespace-nowrap pb-2 md:pb-3"
+                >
+                  {titles[currentWordIndex]}
+                  <svg className="absolute -bottom-1 left-0 w-full" fill="none" height="10" viewBox="0 0 400 10">
+                    <path d="M2 8C50 3 150 3 400 8" stroke="currentColor" strokeLinecap="round" strokeWidth="4"></path>
+                  </svg>
+                </motion.span>
+              </AnimatePresence>
+            </div>
+          </div>
 
           <p className="font-body text-lg text-text-main/80 max-w-lg">
-            I'm a MERN Stack Developer passionate about building robust, scalable applications and seamless user experiences from the database to the front-end interface.
+            I'm a passionate developer dedicated to building robust, scalable applications and seamless user experiences from the database to the front-end interface.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 pt-4">

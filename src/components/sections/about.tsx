@@ -64,7 +64,7 @@ export function About() {
         >
           <h2 className="font-sans text-4xl md:text-5xl font-extrabold text-text-main">About me</h2>
           <p className="font-body text-lg text-text-main/70 leading-relaxed">
-            I am a results-driven MERN Stack Developer with a strong foundation in modern web technologies. My expertise lies in building scalable web applications and intuitive user interfaces. I bridge the gap between design and robust backend architecture, ensuring a seamless experience across all devices. While I haven't handled any clients yet, I have built numerous extensive projects to hone my skills and deliver impactful results.
+            I am a results-driven Full Stack Web Developer with a strong foundation in modern web technologies. My expertise lies in building scalable web applications and intuitive user interfaces. I bridge the gap between design and robust backend architecture, ensuring a seamless experience across all devices. While I haven't handled any clients yet, I have built numerous extensive projects to hone my skills and deliver impactful results.
           </p>
         </motion.div>
       </div>

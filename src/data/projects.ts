@@ -14,6 +14,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "biblio-drop",
+    title: "BiblioDrop",
+    description: "This is my first industry level project, where I handled both backend and frontend. This project is about reading books, making it a perfect fit for avid readers. In this app, there are several roles (Admin, Librarian, Reader) with distinct features, interactive dashboards, and live tracking.",
+    tags: ["Next.js", "Express.js", "MongoDB", "Better Auth", "Stripe", "Recharts", "Node.js", "Hero UI"],
+    features: [
+      "Role-Based Dashboards: Custom dashboards with visual data representations using Recharts for Admin (total revenue, operations), Librarian (book revenues, deliveries), and Reader (spending, completed books).",
+      "Librarian & Admin Approvals: Admins approve/promote users and publish/unpublish books, while approved Librarians can easily add, update, or delete books.",
+      "Delivery & Inventory Management: Librarians update book dispatching/delivery statuses, and Readers receive real-time delivery tracking.",
+      "Advanced Search & Filtering: Browse page featuring backend-driven pagination, filtering, sorting, and search with URL state persistence.",
+      "Book Borrowing & Reviews: Secure borrowing system where only users who have borrowed a specific book can submit reviews on its detail page.",
+      "Stripe Payment Integration: Implemented secure payment gateways with Stripe for book transactions along with a complete history.",
+      "Interactive Front-End Features: Built with Next.js, Better Auth, Hero UI, React Toastify, theme toggles, and customized user profile editing."
+    ],
+    behindTheScenes: "Building BiblioDrop was an incredible milestone in my journey. Handling role-based authentication and visual analytics for three separate user interfaces (Admin, Librarian, and Reader) pushed my full-stack capabilities to the next level. Designing the database relationships in MongoDB to manage book inventory, live deliveries, and stripe transactions required meticulous planning. Implementing Stripe payments and JWT-based routing while maintaining state with Better Auth was a major highlight. Ultimately, it taught me how to architect a complex, industry-level project from scratch, making sure the user experience is fluid, secure, and fast.",
+    liveLink: "https://biblo-drop.vercel.app",
+    clientRepo: "https://github.com/sadikur-sadik/BibloDrop",
+    serverRepo: "https://github.com/sadikur-sadik/BibloDrop-Backend",
+    image: "/biblio_drop_mockup.png",
+    detailsImage: "/biblio_drop_details.png"
+  },
+  {
     slug: "idea-vault",
     title: "Idea Vault",
     description: "A secure platform where innovators can post their concepts, explore what others are working on, and collaborate securely. Built with full CRUD functionality and a protected REST API.",
@@ -48,23 +69,6 @@ export const projects: Project[] = [
     clientRepo: "https://github.com/sadikur-sadik/Tiles-Gallery",
     image: "/tiles_gallery_mockup.png",
     detailsImage: "/tiles_gallery_details.png"
-  },
-  {
-    slug: "keen-keeper",
-    title: "Keen Keeper",
-    description: "A personal connection manager and CRM designed to track, schedule, and visualize interactions with friends and professional contacts. Keeps you close to the relationships that matter most.",
-    tags: ["React.js", "Tailwind CSS", "DaisyUI", "React Router", "Recharts", "React Toastify"],
-    features: [
-      "Relationship Timeline: Track dates, times, and specific modes of communication (call, message, meeting) with all friends in a chronologically ordered Feed.",
-      "Data Visualization Dashboard: Provides interactive charts and graphs via Recharts, illustrating communication frequency and health metrics at a glance.",
-      "Smart Attention Alerts: Highlights connections that need immediate attention or have been neglected, helping you maintain important relationships.",
-      "Interactive CRUD Management: Easily add new friends, log interactions, delete records, and update status dynamically on a clean, responsive layout."
-    ],
-    behindTheScenes: "Building Keen Keeper was an exciting exercise in managing complex frontend state and displaying it visually. Since relationship health is dynamic, creating real-time visual charts using Recharts was highly rewarding. Designing the timeline logic to calculate and flag friends that need attention based on contact history challenged my data processing skills. Deployed on Vercel, Keen Keeper serves as a responsive, daily-use dashboard that helps keep valuable human connections alive.",
-    liveLink: "https://keen-keeper-mauve.vercel.app",
-    clientRepo: "https://github.com/sadikur-sadik/KeenKeeper",
-    image: "/keen_keeper_mockup.png",
-    detailsImage: "/keen_keeper_details.png"
   }
 ];
 

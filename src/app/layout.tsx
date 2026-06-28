@@ -17,8 +17,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Sadikur Rahman | MERN Stack Web Developer",
-  description: "Portfolio of Sadikur Rahman, MERN Stack Web Developer.",
+  title: "Sadikur Rahman | Full Stack Web Developer",
+  description: "Portfolio of Sadikur Rahman, Full Stack Web Developer.",
 };
 
 export default function RootLayout({
