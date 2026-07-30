@@ -69,6 +69,7 @@ export function Navbar() {
     { name: "Education", href: "#education" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
     { name: "Resume", href: "https://docs.google.com/document/d/1liuin06dADzezDJbtDJWd6TvbDNMc5YmKcAX3annmaE/export?format=pdf", external: true },
   ]
 

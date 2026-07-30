@@ -50,7 +50,7 @@ export function ContactModal() {
     const data = Object.fromEntries(formData.entries())
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/sadikursadikbs@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/sadikur.r.sadik@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
