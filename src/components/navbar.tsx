@@ -26,7 +26,7 @@ export function Navbar() {
   }, [])
 
   useEffect(() => {
-    const fullName = "Sadikur Rahman"
+    const fullName = "Sadik"
     let currentText = "S"
     let i = 1
     let phase = "typing" // "typing" | "paused" | "deleting" | "done"

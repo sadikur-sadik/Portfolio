@@ -32,7 +32,7 @@ export default async function ProjectPage({ params }: PageProps) {
   const isStaticImage = typeof displayImage !== 'string';
 
   return (
-    <main className="min-h-screen bg-bg-main pt-32 pb-24">
+    <main className="min-h-screen bg-bg-main pt-40 pb-24">
       <div className="max-w-4xl mx-auto px-6 space-y-12">
         
         {/* Back Navigation */}
@@ -84,13 +84,12 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Image / Hero */}
-        <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-primary/10 shadow-2xl bg-bg-surface">
+        <div className="relative w-full h-[250px] sm:h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-primary/10 shadow-2xl bg-bg-surface">
           <Image 
             src={displayImage} 
             alt={`${project.title} preview`}
             fill
-            className="object-cover"
+            className="object-contain"
             placeholder={isStaticImage ? "blur" : undefined}
           />
         </div>

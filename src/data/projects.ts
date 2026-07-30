@@ -31,8 +31,8 @@ export const projects: Project[] = [
     liveLink: "https://biblo-drop.vercel.app",
     clientRepo: "https://github.com/sadikur-sadik/BibloDrop",
     serverRepo: "https://github.com/sadikur-sadik/BibloDrop-Backend",
-    image: "/biblio_drop_mockup.png",
-    detailsImage: "/biblio_drop_details.png"
+    image: "/bibliodrop.png",
+    detailsImage: "/bibliodrop.png"
   },
   {
     slug: "idea-vault",
@@ -50,8 +50,8 @@ export const projects: Project[] = [
     liveLink: "https://idea-vault-a-9.vercel.app",
     clientRepo: "https://github.com/sadikur-sadik/IdeaVault-A-9",
     serverRepo: "https://github.com/sadikur-sadik/IdeaVault-A-9--Backend",
-    image: "/idea_vault_mockup.png",
-    detailsImage: "/idea_vault_details.png"
+    image: "/ideavault.png",
+    detailsImage: "/ideavault.png"
   },
   {
     slug: "tiles-gallery",
@@ -67,8 +67,8 @@ export const projects: Project[] = [
     behindTheScenes: "The main focus of Tiles Gallery was designing an immersive, high-end catalog browser using Next.js. Building a responsive gallery that does justice to high-resolution luxury marble textures required optimizing layouts, images, and animations. Integrating Better Auth for the user space allowed me to create a protected workspace where visitors can save items of interest. The result is a fast, responsive, and visually striking showroom that highlights the beauty of natural stone.",
     liveLink: "https://tiles-gallery-pi.vercel.app",
     clientRepo: "https://github.com/sadikur-sadik/Tiles-Gallery",
-    image: "/tiles_gallery_mockup.png",
-    detailsImage: "/tiles_gallery_details.png"
+    image: "/tiles-gallery.png",
+    detailsImage: "/tiles-gallery.png"
   }
 ];
 

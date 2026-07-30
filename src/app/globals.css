@@ -7,6 +7,7 @@
   --color-bg-surface: var(--bg-surface);
   --color-primary: var(--primary);
   --color-text-main: var(--text-main);
+  --color-border-muted: var(--border-muted);
 
   --font-sans: var(--font-sans);
   --font-body: var(--font-body);
@@ -14,21 +15,23 @@
 
 @layer base {
   :root {
-    --bg-main: #FDFBFB;
+    --bg-main: #F4F6F9;
     --bg-surface: #FFFFFF;
-    --primary: #6B1D2F;
-    --text-main: #1E293B;
+    --primary: #3B82F6;
+    --text-main: #1B2A4A;
+    --border-muted: #E2E8F0;
   }
 
   .dark {
-    --bg-main: #0F172A;
-    --bg-surface: #1E293B;
-    --primary: #E11D48;
-    --text-main: #F8FAFC;
+    --bg-main: #0B132B;
+    --bg-surface: #1C2541;
+    --primary: #60A5FA;
+    --text-main: #F4F6F9;
+    --border-muted: #334155;
   }
 
   * {
-    border-color: color-mix(in srgb, var(--primary) 20%, transparent);
+    border-color: var(--border-muted);
   }
 
   body {

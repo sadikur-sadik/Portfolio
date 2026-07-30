@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, Download } from "lucide-react"
 import Image from "next/image"
-import banner_image from "@/app/asset/banner.png"
+import profile_image from "../../../public/Profile.png"
 
 const titles = [
   "Full Stack Learner",
@@ -43,7 +43,7 @@ export function Hero() {
             <h1 className="font-sans text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
               I am a
             </h1>
-            <div className="relative text-3xl sm:text-5xl md:text-6xl font-extrabold text-primary min-h-[48px] sm:min-h-[68px] md:min-h-[88px] flex items-center justify-center md:justify-start w-full mt-2 overflow-hidden">
+            <div className="relative text-xl sm:text-3xl md:text-5xl font-extrabold text-primary min-h-[32px] sm:min-h-[48px] md:min-h-[68px] flex items-center justify-center md:justify-start w-full mt-2 overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={currentWordIndex}
@@ -112,8 +112,11 @@ export function Hero() {
           <div className="relative w-full max-w-[500px] mx-auto md:ml-auto aspect-square bg-bg-surface/50 rounded-full overflow-hidden shadow-2xl flex items-center justify-center border border-primary/10 z-10">
             <Image
               alt="Sadikur Rahman - Web Developer"
-              className="w-full h-full object-cover drop-shadow-xl"
-              src={banner_image}
+              className="object-cover drop-shadow-xl"
+              src={profile_image}
+              fill
+              sizes="(max-width: 500px) 100vw, 500px"
+              priority
               placeholder="blur"
             />
           </div>
